@@ -18,12 +18,12 @@ export class AppComponent {
     document.getElementById("two").style.display = "none"
     document.getElementById("three").style.display = "none"
   }
-  show2(){
+  show2(event){
     document.getElementById("one").style.display = "none"
     document.getElementById("two").style.display = "block"
     document.getElementById("three").style.display = "none"
   }
-  show3(){
+  show3(event){
     document.getElementById("one").style.display = "none"
     document.getElementById("two").style.display = "none"
     document.getElementById("three").style.display = "block"
