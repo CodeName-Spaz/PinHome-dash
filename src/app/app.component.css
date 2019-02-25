@@ -14,6 +14,8 @@
     text-align: center;
     line-height: 80px;
     font-weight: bold;
+    color: white;
+    font-size: 1vw
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -37,7 +39,7 @@ body{
     /* background: green; */
     width: 99%;
     /* height: 15%; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     position: relative;
     flex-wrap: wrap;
@@ -45,16 +47,17 @@ body{
 }
 .categories  div{
     width: 250px;
-    height: 100px;
+    height: 10vh;
     background: white;
     margin: auto auto;
     text-align: center;
-    line-height: 100px;
+    line-height: 750%;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-weight: bold;
     margin: 20px auto;
     border-radius: 5px;
+    position: relative;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.384)
 }
 .categories div:nth-child(1){
@@ -102,6 +105,7 @@ body{
     /* background: blue; */
 }
 .chart{
+    font-size: 500px;
     width: 95%;
     height: 96%;
     background: green;
@@ -125,9 +129,10 @@ body{
 }
 
 .select > div{
+    cursor: pointer;
     width: 90%;
     height: 170px;
-    background: whitesmoke;
+    background: white;
     margin: 10px auto;
     text-align: center;
     line-height: 175px;
@@ -144,13 +149,20 @@ body{
     width: 45%;
     height: 90px;
     line-height: 90px;
-    background: red;
+    /* background: red; */
     margin: auto auto;
     text-align: center;
+    color: white;
+    font-weight: bolder;font-size: 2em;
     border-radius: 5px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.384)
 }
-
+.users-orgs > div:nth-child(1){
+    background: #FCC419;
+}
+.users-orgs > div:nth-child(2){
+    background: rgb(100, 212, 100);
+}
 #one{
     display: block;
 }
@@ -160,3 +172,5 @@ body{
 #three{
     display: none;
 }
+
+@import 'material-icons/iconfont/material-icons.scss';

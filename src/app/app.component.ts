@@ -13,7 +13,7 @@ export class AppComponent {
   }
 
   show1(event){
-    console.log(event);
+    console.log("clicked");
     document.getElementById("one").style.display = "block"
     document.getElementById("two").style.display = "none"
     document.getElementById("three").style.display = "none"
