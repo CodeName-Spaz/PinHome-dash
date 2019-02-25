@@ -19,7 +19,7 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: green;
+    /* background: green; */
     margin-left: -10px;
     margin-top: -10px;
     position: fixed;
@@ -35,6 +35,9 @@ body{
     padding-top: 90px;
     overflow-y: scroll; 
 }
+#overall{
+    font-size: 60px
+}
 .categories{
     /* background: green; */
     width: 99%;
@@ -47,11 +50,11 @@ body{
 }
 .categories  div{
     width: 250px;
-    height: 10vh;
+    height: 150px;
     background: white;
     margin: auto auto;
     text-align: center;
-    line-height: 750%;
+    line-height: 150px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-weight: bold;
@@ -90,6 +93,13 @@ body{
     background: rgb(84,86,143);
     color:white
 }
+canvas{
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    font-size: 60px;
+    object-fit: contain;
+}
 .wrap1{
     width: 90%;
     height: 600px;
@@ -108,7 +118,7 @@ body{
     font-size: 500px;
     width: 95%;
     height: 96%;
-    background: green;
+    /* background: green; */
     margin: 10px auto;
     position: absolute;
     text-align: center;
@@ -131,11 +141,11 @@ body{
 .select > div{
     cursor: pointer;
     width: 90%;
-    height: 170px;
+    height: 125px;
     background: white;
     margin: 10px auto;
     text-align: center;
-    line-height: 175px;
+    line-height: 125px;
     border-radius: 6px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.384)
 }
