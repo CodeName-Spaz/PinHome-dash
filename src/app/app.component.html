@@ -1,14 +1,17 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
 <head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="/path/to/material-icons/css/material-icons.min.css">
+  <link rel="stylesheet" href="/path/to/material-icons/iconfont/material-icons.css">
 </head>
 
 <body>
+  
   <div class="content">
     <div class="nav">
       PinHome Dashboard
-      <i class="material-icons">face</i>
+      
     </div>
     <div class="container">
       <div class="categories">
@@ -23,7 +26,7 @@
       <div class="wrap1">
         <div id="chartSpace">
           <div class="chart" id="one">
-            <div class="chart">
+            <div class="char">
               <canvas id="Overall"></canvas>
             </div>
           </div>
@@ -39,16 +42,20 @@
         </div>
         <div id="otherChart">
           <div class="select">
-            <div (click)="show1($event)">one</div>
-            <div (click)="show2($event)">two</div>
-            <div (click)="show3($event)">three</div>
-            <div (click)="show4($event)">four</div>
+            <div (click)="show1($event)">Organisations per Category</div>
+            <div (click)="show2($event)">Total Organisations per City</div>
+            <div (click)="show3($event)">Organisations Registered per Month</div>
+            <div (click)="show4($event)">Viewed Organsiations per Category</div>
           </div>
         </div>
-      </div>
+      </div><br>
       <div class="users-orgs">
-        <div>{{profiles}} Users</div>
-        <div>{{orgs}} Organisations</div>
+        <div>
+         
+          {{profiles}} <i class="material-icons">person</i> Total Users</div>
+        <div>
+         
+          {{orgs}} <i class="material-icons">account_balance</i> Total Organisations</div>
       </div>
     </div>
   </div>

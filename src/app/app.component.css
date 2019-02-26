@@ -5,17 +5,18 @@
     margin: -20px;
     padding: 10px;
 }
+
 .nav{
     width: 100%;
     height: 80px;
-    background: blue;
+    background: #10243d;
     position: fixed;
     z-index: 100;
     text-align: center;
     line-height: 80px;
     font-weight: bold;
     color: white;
-    font-size: 1vw
+    font-size: 16px
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -35,9 +36,6 @@ body{
     padding-top: 90px;
     overflow-y: scroll; 
 }
-#overall{
-    font-size: 60px
-}
 .categories{
     /* background: green; */
     width: 99%;
@@ -50,11 +48,11 @@ body{
 }
 .categories  div{
     width: 250px;
-    height: 150px;
+    height: 120px;
     background: white;
     margin: auto auto;
     text-align: center;
-    line-height: 150px;
+    line-height: 120px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-weight: bold;
@@ -64,33 +62,33 @@ body{
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.384)
 }
 .categories div:nth-child(1){
-    background: rgb(128,199,103);
+    background: rgba(255, 99, 132, 1);
     color: white;
 }
 
 .categories div:nth-child(2){
-    background: rgb(6,115,197);
+    background: rgba(255, 206, 86, 1);
     color: white;
 }
 
 .categories div:nth-child(3){
-    background: rgb(240,82,81);
+    background: rgba(20, 162, 70, 1);
     color: white;
 }
 .categories div:nth-child(4){
-    background: rgb(255,189,77);
+    background: rgba(54, 162, 235, 1);
     color: white;
 }
 .categories div:nth-child(5){
-    background: rgb(76, 197, 197);
+    background: rgba(75, 192, 192, 1);
     color: white;
 }
 .categories div:nth-child(6){
-    background: rgb(155,58,187);
+    background: rgba(153, 102, 255, 1);
     color: white;
 }
 .categories div:nth-child(7){
-    background: rgb(84,86,143);
+    background: rgba(255, 159, 40, 1);
     color:white
 }
 canvas{
@@ -113,6 +111,54 @@ canvas{
     margin: auto auto;
     position: relative;
     /* background: blue; */
+}
+#chartSpace > div:active{
+    transition: 700ms;
+    background: #10243d;
+}
+#chartSpace .chart:nth-child(1){
+    background: rgb(55,74,94);
+    animation: revealer 700ms;
+    animation-iteration-count: initial;
+}
+
+.select > div:nth-child(1){
+    background: rgb(32, 62, 94);
+}
+#chartSpace .chart:nth-child(2){
+    background: rgb(48,64,81);
+    animation: revealer 700ms;
+    animation-iteration-count: initial;
+}
+
+.select > div:nth-child(2){
+    background: rgb(55,74,94);
+}
+#chartSpace .chart:nth-child(3){
+    background: rgb(126,139,140);
+    animation: revealer 700ms;
+    animation-iteration-count: initial;
+}
+.select > div:nth-child(3){
+    background: rgb(126,139,140);
+}
+#chartSpace .chart:nth-child(4){
+    background: rgb(148,164,165);
+    animation: revealer 700ms;
+    animation-iteration-count: initial;
+}
+.select > div:nth-child(4){
+    background: rgb(148,164,165);
+}
+@keyframes revealer{
+    0%{
+        opacity: 0;
+        filter: blur(6px);
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0px);
+    }
 }
 .chart{
     font-size: 500px;
@@ -143,6 +189,8 @@ canvas{
     width: 90%;
     height: 125px;
     background: white;
+    color: white;
+    font-weight: bold;
     margin: 10px auto;
     text-align: center;
     line-height: 125px;
