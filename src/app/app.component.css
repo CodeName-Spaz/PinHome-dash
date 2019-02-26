@@ -182,5 +182,7 @@ canvas{
 #three{
     display: none;
 }
-
+#four{
+    display: none;
+}
 @import 'material-icons/iconfont/material-icons.scss';

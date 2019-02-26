@@ -101,6 +101,7 @@ export class AppComponent {
   cities = new Array();
   tempCities = new Array();
   SignCities(city) {
+    
     var results = "";
     for (var x = 0; x < this.cities.length; x++) {
       if (this.cities[x] == city) {
