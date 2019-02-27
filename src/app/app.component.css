@@ -178,6 +178,7 @@ canvas{
 }
 #otherChart{
     width:25%;
+    min-width: 200px;
     /* background: green; */
     height: 550px;
     margin: auto auto;
