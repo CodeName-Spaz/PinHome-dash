@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "hosting": "pinhome-dashboard",
+    "default": "pinhome-dashboard"
+  }
+}

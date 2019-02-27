@@ -119,16 +119,11 @@ export class AppComponent {
   views = new Array();
   viewsNum = new Array();
   getOrgsViews() {
-    firebase
-      .database()
-      .ref("catViews/")
-      .on("value", (data: any) => {
+    firebase.database().ref("catViews/").on("value", (data: any) => {
         var out = data.val();
         var keys = Object.keys(out);
         for (var x = 0; x < keys.length; x++) {
-          firebase
-            .database()
-            .ref("catViews/" + keys[x]).on("value", (data2: any) => {
+          firebase.database().ref("catViews/" + keys[x]).on("value", (data2: any) => {
               var details = data2.val();
               var k = Object.keys(details);
               this.views.push(keys[x]);
@@ -149,22 +144,22 @@ export class AppComponent {
           label: 'Total Views per Organizations',
           data: this.viewsNum,
           backgroundColor: [
-            'rgba(255, 99, 132, 1)',
             'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
+            'rgba(255, 99, 132, 1)',
             'rgba(153, 102, 255, 1)',
-            'rgba(255, 159, 40, 1)',
             'rgba(20, 162, 70, 1)',
+            'rgba(255, 159, 40, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(75, 192, 192, 1)',
           ],
           borderColor: [
-            'rgba(255,99,132,1)',
             'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
+            'rgba(255, 99, 132, 1)',
             'rgba(153, 102, 255, 1)',
-            'rgba(255, 159, 64, 1)',
-            'rgba(54, 162, 235, 1)',
+            'rgba(20, 162, 70, 1)',
+            'rgba(255, 159, 40, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(75, 192, 192, 1)',
           ],
           borderWidth: 1
         }]
@@ -185,10 +180,7 @@ export class AppComponent {
   ngOnInit() {
     this.getProfiles();
     this.getOrgsViews();
-    firebase
-      .database()
-      .ref("Websiteprofiles/")
-      .on("value", (data: any) => {
+    firebase.database().ref("Websiteprofiles/").on("value", (data: any) => {
         if (data.val() != null || data.val() != undefined) {
           this.cities.length = 0;
           this.cityValues.length = 0;
@@ -273,19 +265,19 @@ export class AppComponent {
           data: this.datesValues,
           backgroundColor: [
             'rgba(255, 99, 132, 1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)',
-            'rgba(255, 159, 64, 1)'
+            'rgba(255, 99, 132, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(255, 99, 132, 1)',
           ],
           borderColor: [
-            'rgba(255,99,132,1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)',
-            'rgba(255, 159, 64, 1)'
+            'rgba(255, 99, 132, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(255, 99, 132, 1)',
           ],
           borderWidth: 1
         }]
@@ -374,29 +366,38 @@ export class AppComponent {
   }
 
   show1(event) {
-    console.log("clicked");
+    // console.log("clicked");
+    var labeler = document.getElementsByClassName("labler") as HTMLCollectionOf <HTMLElement>;
+    labeler[0].style.display = "none";
     document.getElementById("one").style.display = "block"
     document.getElementById("two").style.display = "none"
     document.getElementById("three").style.display = "none"
     document.getElementById("four").style.display = "none"
   }
   show2(event) {
+    var labeler = document.getElementsByClassName("labler") as HTMLCollectionOf <HTMLElement>;
+    labeler[0].style.display = "none";
     document.getElementById("one").style.display = "none"
     document.getElementById("two").style.display = "block"
     document.getElementById("three").style.display = "none"
     document.getElementById("four").style.display = "none"
   }
   show3(event) {
+    var labeler = document.getElementsByClassName("labler") as HTMLCollectionOf <HTMLElement>;
+    labeler[0].style.display = "none";
     document.getElementById("one").style.display = "none"
     document.getElementById("two").style.display = "none"
     document.getElementById("three").style.display = "block"
     document.getElementById("four").style.display = "none"
   }
   show4(event) {
+
+    var labeler = document.getElementsByClassName("labler") as HTMLCollectionOf <HTMLElement>;
+    labeler[0].style.display = "block";
     document.getElementById("one").style.display = "none"
     document.getElementById("two").style.display = "none"
-    document.getElementById("three").style.display = "none"
-
+    document.getElementById("three").style.display = "none";
+    
     document.getElementById("four").style.display = "block"
   }
 
