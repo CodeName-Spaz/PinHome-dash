@@ -59,33 +59,33 @@ body{
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.384)
 }
 .categories div:nth-child(1){
-    background: rgba(255, 99, 132, 1);
+    background: rgba(54, 162, 235, 1);
     color: white;
 }
 
 .categories div:nth-child(2){
-    background: rgba(255, 206, 86, 1);
+    background: rgba(255, 99, 132, 1);
     color: white;
 }
 
 .categories div:nth-child(3){
-    background: rgba(20, 162, 70, 1);
-    color: white;
-}
-.categories div:nth-child(4){
-    background: rgba(54, 162, 235, 1);
-    color: white;
-}
-.categories div:nth-child(5){
-    background: rgba(75, 192, 192, 1);
-    color: white;
-}
-.categories div:nth-child(6){
     background: rgba(153, 102, 255, 1);
     color: white;
 }
-.categories div:nth-child(7){
+.categories div:nth-child(4){
+    background: rgba(20, 162, 70, 1);  
+    color: white;
+}
+.categories div:nth-child(5){
+    background: rgba(255, 206, 86, 1);
+    color: white;
+}
+.categories div:nth-child(6){
     background: rgba(255, 159, 40, 1);
+    color: white;
+}
+.categories div:nth-child(7){
+    background: rgba(75, 192, 192, 1);
     color:white
 }
 canvas{
@@ -118,13 +118,13 @@ canvas{
     transition: 700ms;
     background: #10243d;
 }
+.select > div{
+    min-width:300px;
+}
 #chartSpace .chart:nth-child(1){
     background: rgba(55, 74, 94, 1);
     animation: revealer 700ms;
     animation-iteration-count: initial;
-}
-.select > div{
-    min-width:300px;
 }
 .select > div:nth-child(1){
     background: rgba(55, 74, 94, 1);
@@ -147,13 +147,15 @@ canvas{
     background: rgba(41, 50, 59, 0.5);
 }
 #chartSpace .chart:nth-child(4){
-    background: rgba(75, 100, 126, 0.25);
+    background: rgba(55, 74, 94, 0.25);
     animation: revealer 700ms;
     animation-iteration-count: initial;
 }
 .select > div:nth-child(4){
-    background: rgba(75, 100, 126, 0.25);
+    background: rgba(75, 100, 126, 0.507);
 }
+
+
 @keyframes revealr{
     0%{
         opacity: 0;
@@ -239,6 +241,7 @@ canvas{
 }
 #four{
     display: none;
+    background: rgba(75, 100, 126, 0.507);
 }
 .labler{
     position: absolute;
