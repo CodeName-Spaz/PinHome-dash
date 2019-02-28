@@ -180,6 +180,7 @@ canvas{
 }
 #otherChart{
     width:25%;
+    min-width: 200px;
     /* background: green; */
     height: 550px;
     margin: auto auto;
@@ -253,7 +254,7 @@ canvas{
 }
 @import 'material-icons/iconfont/material-icons.scss';
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 868px){
     .container{
         background: whitesmoke;
         width: 100%;
